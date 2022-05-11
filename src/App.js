@@ -46,7 +46,7 @@ function App() {
         <input placeholder="Enter any color..." value={color} onChange={handleColorChange} />
         <button disabled={isLoading} onClick={findColors} className="btn-primary">Search</button>
       </div>
-      {result.length === 0  && <div className="no-results">No result found.</div>}
+      {result.length === 0  && <p className="no-results">No result found.</p>}
       <div className="box-container">
         {result.map((color) => <Grid key={color.hex} color={color} />)}
       </div>

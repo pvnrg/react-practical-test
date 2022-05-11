@@ -4,8 +4,7 @@ function Grid(props) {
   const { color } = props;
   return (
     <div
-      className="color-box"
-      style={{ backgroundColor: color.hex, height: 200 + Math.floor(Math.random() * 25) * 10 }}
+      style={{ backgroundColor: color.hex, height: Math.floor(Math.random() * (250 - 100) + 100) }}
     >
       <span className="name">{color.name}</span>
       <span className="hex">{color.hex}</span>
